@@ -1,6 +1,14 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
   overflow-x: hidden;
-  background: black;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -166,57 +174,43 @@ img::-moz-selection {
 }
 
 header.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+  background: url("../img/header-bg.jpg") no-repeat bottom center scroll;
+  background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
+header.masthead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.masthead .intro-text .intro-heading {
+header.masthead .intro-body .brand-heading {
   font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header.masthead .intro-body .intro-text {
+  font-size: 18px;
 }
 
 @media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+  header.masthead {
+    height: 100%;
+    padding: 0;
   }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  header.masthead .intro-body .brand-heading {
+    font-size: 100px;
   }
-  header.masthead .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
-    margin-bottom: 50px;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  header.masthead .intro-body .intro-text {
+    font-size: 22px;
   }
 }
 
