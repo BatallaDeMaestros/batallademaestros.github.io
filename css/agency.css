@@ -651,6 +651,8 @@ section#contact :-ms-input-placeholder {
 }
 
 footer {
+  background: #000;
+  color: #fff;
   padding: 25px 0;
   text-align: center;
 }
@@ -686,7 +688,7 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #212529;
+  background-color: #000;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
