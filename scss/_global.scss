@@ -12,6 +12,10 @@ body {
     @include body-font;
 }
 
+.main-logo {
+    max-width: 50vw;
+}
+
 p {
     line-height: 1.75;
 }
