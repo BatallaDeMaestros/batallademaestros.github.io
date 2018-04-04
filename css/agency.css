@@ -223,6 +223,10 @@ header.masthead .intro-body .intro-text {
   text-transform: none;
 }
 
+#portfolio {
+  background-color: #1a1a1a;
+}
+
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
