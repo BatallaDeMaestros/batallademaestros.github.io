@@ -11,7 +11,7 @@
         width: 2px;
         margin-left: -1.5px;
         content: '';
-        background-color: $gray-200;
+        background-color: #262626;
     }
     > li {
         position: relative;
@@ -53,7 +53,7 @@
             margin-left: 0;
             text-align: center;
             color: white;
-            border: 7px solid $gray-200;
+            border: 7px solid #262626;
             border-radius: 100%;
             background-color: $primary;
             h4 {
@@ -86,9 +86,10 @@
     .timeline-heading {
         h4 {
             margin-top: 0;
-            color: inherit;
+            color: $white;
             &.subheading {
                 text-transform: none;
+                color: $primary;
             }
         }
     }

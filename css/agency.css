@@ -401,7 +401,7 @@ header.masthead .intro-body .intro-text {
   width: 2px;
   margin-left: -1.5px;
   content: '';
-  background-color: #e9ecef;
+  background-color: #262626;
 }
 
 .timeline > li {
@@ -450,7 +450,7 @@ header.masthead .intro-body .intro-text {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #262626;
   border-radius: 100%;
   background-color: #CE2B20;
 }
@@ -487,11 +487,12 @@ header.masthead .intro-body .intro-text {
 
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: inherit;
+  color: #fff;
 }
 
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
+  color: #CE2B20;
 }
 
 .timeline .timeline-body > ul,
