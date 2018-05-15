@@ -68,7 +68,7 @@
                 <div class="events-wrapper">
                     <div class="events">
                         <ol>
-                            <li ng-repeat="event in events"><a href="#0" data-date="{{event.fullDate}}" class="selected">{{event.date}}</a></li>
+                            <li ng-repeat="event in events" ><a href="#" data-date="{{event.fullDate}}" ng-class="{'selected': $first}" >{{event.date}}</a></li>
                         </ol>
         
                         <span class="filling-line" aria-hidden="true"></span>
