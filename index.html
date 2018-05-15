@@ -68,17 +68,7 @@
                 <div class="events-wrapper">
                     <div class="events">
                         <ol>
-                            <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
-                            <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
-                            <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
-                            <li><a href="#0" data-date="20/05/2014">20 May</a></li>
-                            <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
-                            <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
-                            <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
-                            <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
-                            <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
-                            <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
-                            <li><a href="#0" data-date="03/03/2015">03 Mar</a></li>
+                            <li ng-repeat="event in events"><a href="#0" data-date="{{event.fullDate}}" class="selected">{{event.date}}</a></li>
                         </ol>
         
                         <span class="filling-line" aria-hidden="true"></span>
@@ -93,89 +83,9 @@
         
             <div class="events-content">
                 <ol>
-                    <li class="selected" data-date="16/01/2014">
-                        <h2>Horizontal Timeline</h2>
-                        <em>January 16th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="28/02/2014">
-                        <h2>Event title here</h2>
-                        <em>February 28th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="20/04/2014">
-                        <h2>Event title here</h2>
-                        <em>March 20th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="20/05/2014">
-                        <h2>Event title here</h2>
-                        <em>May 20th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="09/07/2014">
-                        <h2>Event title here</h2>
-                        <em>July 9th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="30/08/2014">
-                        <h2>Event title here</h2>
-                        <em>August 30th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="15/09/2014">
-                        <h2>Event title here</h2>
-                        <em>September 15th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="01/11/2014">
-                        <h2>Event title here</h2>
-                        <em>November 1st, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="10/12/2014">
-                        <h2>Event title here</h2>
-                        <em>December 10th, 2014</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="19/01/2015">
-                        <h2>Event title here</h2>
-                        <em>January 19th, 2015</em>
-                        <p>	
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                        </p>
-                    </li>
-        
-                    <li data-date="03/03/2015">
-                        <h2>Event title here</h2>
-                        <em>March 3rd, 2015</em>
+                    <li ng-repeat="event in events" ng-class="{'selected': $first}" data-date="{{event.fullDate}}">
+                        <h2>{{event.location}}</h2>
+                        <em>{{event.txtDate}}</em>
                         <p>	
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
                         </p>
@@ -281,29 +191,27 @@
     <script src="js/contact_me.js"></script>
     <script src="js/agency.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="js/main.js"></script>
     <script type="text/javascript">
 
     angular.module('starterApp', []).controller('mainCtrl', function($scope) {
         $scope.events = [
-            {location: "Hermosillo", date:"Mayo 4"},
-            {location: "Tijuana", date:"Mayo 5"},
-            {location: "Mexicalli", date:"Mayo 6"},
-            {location: "Guadalajara", date:"Junio 2"},
-            {location: "Aguascalientes", date:"Junio 3"},
-            {location: "Monterrey", date:"Junio 9"},
-            {location: "Ciudad Juarez", date:"Junio 10"},
-            {location: "Cancun", date:"Junio 16"},
-            {location: "Merida", date:"Junio 17"},
-            {location: "CDMX", date:"Junio 23"},
-            {location: "San Luis Potosi", date:"Junio 24"},
-            {location: "Puebla", date:"Junio 30"},
-            {location: "Xalapa", date:"Julio 01"},
-            {location: "Gold Mexico", date:"???"},
-            {location: "Deluxe Chile", date:"???"}
+            {location: "Hermosillo", date:"May 4", fullDate:"04/05/2018", txtDate:"Mayo 04, 2018"},
+            {location: "Tijuana", date:"May 5", fullDate:"05/05/2018", txtDate:"Mayo 05, 2018"},
+            {location: "Mexicalli", date:"May 6", fullDate:"06/05/2018", txtDate:"Mayo 06, 2018"},
+            {location: "Guadalajara", date:"Jun 2", fullDate:"02/06/2018", txtDate:"Junio 02, 2018"},
+            {location: "Aguascalientes", date:"Jun 3", fullDate:"03/06/2018", txtDate:"Junio 03, 2018"},
+            {location: "Monterrey", date:"Jun 9", fullDate:"09/06/2018", txtDate:"Junio 09, 2018"},
+            {location: "Ciudad Juarez", date:"Jun 10", fullDate:"10/06/2018", txtDate:"Junio 10, 2018"},
+            {location: "Cancun", date:"Jun 16", fullDate:"16/06/2018", txtDate:"Junio 16, 2018"},
+            {location: "Merida", date:"Jun 17", fullDate:"17/06/2018", txtDate:"Junio 17, 2018"},
+            {location: "CDMX", date:"Jun 23", fullDate:"23/06/2018", txtDate:"Junio 23, 2018"},
+            {location: "San Luis Potosi", date:"Jun 24", fullDate:"24/06/2018", txtDate:"Junio 24, 2018"},
+            {location: "Puebla", date:"Jun 30", fullDate:"30/06/2018", txtDate:"Junio 30, 2018"},
+            {location: "Xalapa", date:"Jul 01", fullDate:"01/07/2018", txtDate:"Julio 01, 2018"}
         ]
     })
     </script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
